@@ -1,11 +1,18 @@
 function menu(check,obj) {
 	var ver = check.checked;
 	if (ver == true) {
-		obj.style.right = '0';
-		obj.style.width = '100vw';
+		obj.style.display = 'block';
 	}
 	else {
-		obj.style.width = '0';
-		obj.style.right = '-100vw';
+		obj.style.display = 'none';
+	}
+}
+function rotar(check,men) {
+	var ver = check.checked;
+	if (ver == true) {
+		men.style.rotate = '180deg';
+	}
+	else {
+		men.style.rotate = '-180deg';
 	}
 }

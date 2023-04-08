@@ -10,6 +10,7 @@
 
 body{
 	background: #fcfcfc;
+	overflow-x: hidden;
 }
 
 #inicio{
@@ -144,7 +145,7 @@ hr {
 	display: none;
 }
 
-.menu{
+#men{
 	color: #fcfcfc;
 	float: right;
 	margin: 1vh 10vw 0 0;
@@ -193,10 +194,11 @@ hr {
 		align-items: right;
 	}
 
-	.menu{
+	#men{
 		margin: -1vh 10vw 0 0;
 		font-size: 20vw;
 		display: block;
+		transition: .5s;
 	}
 
 	.right{
@@ -205,15 +207,16 @@ hr {
 	}
 
 	.galeria img:hover{
-		width: 48.7vw;
+		width: 47.7vw;
 		border-radius: 2.6vw;
 	}
 
 	nav{
+		display: none;
 		height: 90vh;
 		width: 100vw;
 		position: absolute;
-		right: -100vw;
+		left: 0;
 		top: 12.7vw;
 		background-color: #4163b2;
 		text-align: center;
@@ -229,9 +232,10 @@ hr {
 	}
 
 	#sup{
+		display: none;
 		position: absolute;
 		bottom: 15vh;
-		right: -100vw;
+		left: 0;
 		margin: 0;
 		width: 100vw;
 		transition: .5s ease;
