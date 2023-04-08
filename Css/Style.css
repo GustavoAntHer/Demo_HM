@@ -112,7 +112,7 @@ hr {
 	margin: 30px auto;
 	border: solid .5vh #3f52a7;
 	border-radius: 3vw;
-	z-index: 100;
+	z-index: 1;
 }
 
 .galeria img{
@@ -154,7 +154,7 @@ hr {
 	display: none;
 }
 
-@media screen and (max-width: 952px){
+@media screen and (max-width: 768px){
 
 	header img{
 		margin: 1% 0 1% 3%;
@@ -176,8 +176,11 @@ hr {
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 424px){
 
+	#inicio{
+		height: 100vh;
+	}
 
 	header img{
 		margin: 2% 0 1% 1%;
@@ -195,8 +198,8 @@ hr {
 	}
 
 	#men{
-		margin: -1vh 10vw 0 0;
-		font-size: 20vw;
+		margin: 0.5vh 10vw 0 0;
+		font-size: 16vw;
 		display: block;
 		transition: .5s;
 	}
@@ -204,6 +207,13 @@ hr {
 	.right{
 		border-bottom-right-radius: 2.2vw;
 		border-top-right-radius: 2.2vw;
+	}
+
+	.galeria{
+		z-index: 1;
+	}
+	.galeria img{
+		z-index: 2;
 	}
 
 	.galeria img:hover{
@@ -239,6 +249,7 @@ hr {
 		margin: 0;
 		width: 100vw;
 		transition: .5s ease;
+		z-index: 100;
 	}
 
 	#sup a{

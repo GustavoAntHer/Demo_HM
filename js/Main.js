@@ -13,6 +13,6 @@ function rotar(check,men) {
 		men.style.rotate = '180deg';
 	}
 	else {
-		men.style.rotate = '-180deg';
+		men.style.rotate = '0deg';
 	}
 }
