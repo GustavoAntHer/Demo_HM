@@ -272,9 +272,14 @@ footer a{
 		transition: .5s;
 	}
 
+	.left{
+		border-bottom-left-radius: 2vw;
+		border-top-left-radius: 2vw;
+	}
+
 	.right{
-		border-bottom-right-radius: 2.2vw;
-		border-top-right-radius: 2.2vw;
+		border-bottom-right-radius: 2vw;
+		border-top-right-radius: 2vw;
 	}
 
 	.galeria{
@@ -285,7 +290,7 @@ footer a{
 	}
 
 	.galeria img:hover{
-		width: 47.8vw;
+		width: 47.9vw;
 		border-radius: 2.3vw;
 	}
 
